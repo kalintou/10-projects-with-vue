@@ -1,12 +1,13 @@
 <script setup>
 
 import {ref} from 'vue'
-let isVisible = ref(false)
+
+let password = ref(0)
 
 </script>
 
 <template>
-    <p v-show="isVisible">This paragraph will be shown or hidden based on the value of isVisible</p>
-    <button @click="isVisible=true">show</button>
-    <button @click="isVisible=false">close</button>
+    <h1 v-if="password.length > 8">Strong Password</h1>
+    <h1 v-else-if="password.length < 8">Weak Password</h1>
+    <h1 v-else>Please Enter Your Password</h1>
 </template>
