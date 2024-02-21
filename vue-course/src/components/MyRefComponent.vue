@@ -1,18 +1,18 @@
 <script setup>
-import {ref} from 'vue'
-let userInfo = ref({name: 'Alex', age: 20, location: ['NYC','IDK'], isMarried: false})
+import {reactive, ref} from 'vue'
+
+let friends = reactive([ref('Jordan'), ref('Alex'), ref('HuXn')])
+
 </script>
 
 <template>
 
-<h1>Name: {{ userInfo.name }}</h1>
-<h1>Age: {{ userInfo.age }}</h1>
-<h1>Location: {{ userInfo.location }}</h1>
-<h1>isMarried: {{ userInfo.isMarried }}</h1>
+<h1>1. {{ friends[0] }}</h1>
+<h1>2. {{ friends[1] }}</h1>
+<h1>3. {{ friends[2] }}</h1>
 
-<button @click="userInfo.name='HuXn'">Change Name</button>
-<button @click="userInfo.age= 40">Change Age</button>
-<button @click="userInfo.location= ['Earth', 'Minami']">Change Location</button>
-<button @click="userInfo.isMarried= true">Change Status</button>
+<button @click="friends[0] = '🤝'">Hand Shake</button>
+<button @click="friends[1] = '🤝'">Hand Shake</button>
+<button @click="friends[2] = '🤝'">Hand Shake</button>
 
 </template>
