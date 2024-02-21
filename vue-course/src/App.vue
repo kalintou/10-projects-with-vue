@@ -1,8 +1,8 @@
 <script setup>
-import MyReactiveComponent from './components/MyReactiveComponent.vue';
+import MyRefComponent from './components/MyRefComponent.vue';
 </script>
 
 
 <template>
-  <MyReactiveComponent />
+  <MyRefComponent />
 </template>
