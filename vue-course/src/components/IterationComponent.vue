@@ -1,17 +1,19 @@
 <script setup>
 
-import {ref} from 'vue'
-
-const movies = ref([
-    ['movie1','movie2','movie3','movie4','movie5'],
-    ['movie6','movie7','movie8','movie9','movie10'],
-    ['movie11','movie12','movie13','movie14','movie15'],
-    ['movie16','movie17','movie18','movie19','movie20'],
-])
+import {reactive} from 'vue'
+const formData = reactive({username: '', email: '', password: ''})
 </script>
 
 <template>
-    <ul v-for="(movie, i) in movies" :key="i">
-        <li v-for="(m, index) in movie" :key="index">{{ m }}</li>
-    </ul>
+    <form>
+        <input type="text" placeholder="Please enter your name" v-model="formData.username">
+        <input type="email" placeholder="Please enter your email" v-model="formData.email">
+        <input type="password" placeholder="Please enter your password" v-model="formData.password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>{{ formData.username }}</h1>
+    <h1>{{ formData.email }}</h1>
+    <h1>{{ formData.password }}</h1>
+
 </template>
