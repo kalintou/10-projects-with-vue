@@ -1,8 +1,8 @@
 <script setup>
-import MyRefComponent from './components/MyRefComponent.vue';
+import ComputerProperties from './components/ComputerProperties.vue';
 </script>
 
 
 <template>
-  <MyRefComponent />
+  <ComputerProperties />
 </template>
