@@ -2,45 +2,16 @@
 
 import {ref} from 'vue'
 
-const books = ref([
-    {
-        id: 1,
-        title: '1983',
-        author: 'George Orwell',
-        genre: 'Dystopian',
-        publicationYear: 1949
-    },
-    {
-        id: 2,
-        title: '1984',
-        author: 'George OOrwell',
-        genre: 'SF',
-        publicationYear: 1942
-    },
-    {
-        id: 3,
-        title: '1985',
-        author: 'George OOOrwell',
-        genre: 'SF',
-        publicationYear: 1967
-    },
-    {
-        id: 4,
-        title: '1999',
-        author: 'George OOOOrwell',
-        genre: 'SF',
-        publicationYear: 1267
-    }
+const movies = ref([
+    ['movie1','movie2','movie3','movie4','movie5'],
+    ['movie6','movie7','movie8','movie9','movie10'],
+    ['movie11','movie12','movie13','movie14','movie15'],
+    ['movie16','movie17','movie18','movie19','movie20'],
 ])
-
 </script>
 
 <template>
-    <ul v-for="(book, index) in books" :key="index">
-        <li>ID: {{ book.id }}</li>
-        <li>Title: {{ book.title }}</li>
-        <li>Author: {{ book.author }}</li>
-        <li>Genre: {{ book.genre }}</li>
-        <li>PublicationYear: {{ book.publicationYear }}</li>
+    <ul v-for="(movie, i) in movies" :key="i">
+        <li v-for="(m, index) in movie" :key="index">{{ m }}</li>
     </ul>
 </template>
