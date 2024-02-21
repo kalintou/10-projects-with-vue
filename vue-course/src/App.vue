@@ -1,8 +1,8 @@
 <script setup>
-import ComputerProperties from './components/ComputerProperties.vue';
+import ConditionalRendering from './components/ConditionalRendering.vue';
 </script>
 
 
 <template>
-  <ComputerProperties />
+  <ConditionalRendering />
 </template>
