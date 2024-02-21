@@ -1,8 +1,8 @@
 <script setup>
-import ConditionalRendering from './components/ConditionalRendering.vue';
+import IterationComponent from './components/IterationComponent.vue';
 </script>
 
 
 <template>
-  <ConditionalRendering />
+  <IterationComponent />
 </template>
