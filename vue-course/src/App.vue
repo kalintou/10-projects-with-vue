@@ -1,15 +1,23 @@
 <script setup>
-import FromComponent from './components/FromComponent.vue'
 
-const formHander = (username, email, password) => {
-  console.log('username', username)
-  console.log('email',email)
-  console.log('password', password)
-}
-
+import SlotComponent from './components/SlotComponent.vue';
+import FallbackContent from './components/FallbackContent.vue'
 </script>
 
 
 <template>
-  <FromComponent @userInfo="formHander"/>
+  <SlotComponent>
+    <h1>Content 1</h1>
+    <h2>Content 2</h2>
+  </SlotComponent>
+
+  <hr>
+
+  <FallbackContent>
+
+  </FallbackContent>
+
+  <FallbackContent>
+    <p>Fallback will not work becuase ....</p>
+  </FallbackContent>
 </template>
