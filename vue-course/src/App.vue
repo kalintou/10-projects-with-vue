@@ -1,13 +1,13 @@
 <script setup>
 
-import LifeCycleComponent from './components/LifeCycleComponent.vue';
-import {ref} from 'vue'
-const showHide = ref(true)
+//import BasicComponent from './components/BasicComponent.vue';
+//import ReactiveObject from './components/ReactiveObject.vue';
+import MultipleSources from './components/MultipleSources.vue';
 </script>
 
 <template>
 
-  <LifeCycleComponent v-if="showHide" />
-  <button @click="showHide = !showHide">show / Hide</button>
-
+  <!-- <BasicComponent /> -->
+  <!-- <ReactiveObject /> -->
+  <MultipleSources />
 </template>
