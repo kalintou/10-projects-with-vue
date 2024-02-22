@@ -1,8 +1,8 @@
 <script setup>
-import CounterComponent from './components/CounterComponent.vue';
+import MyComponent from './components/MyComponent.vue';
 </script>
 
 <template>
-  <CounterComponent />
+  <MyComponent />
 
 </template>
