@@ -1,19 +1,21 @@
 <script setup>
 
-import NamedSlot from './components/NamedSlot.vue'
+import SchoolComponent from './components/SchoolComponent.vue';
+import {provide} from 'vue';
+
+provide('studentName', 'Alex')
+provide('studentAge', 20)
+provide('studentLocation', ['China','Shanghai'])
+
+// const studentName = 'alex'
+// const studentAge = 20
+// const studentLocation = ['China', 'Shanghai']
 
 </script>
 
 
 <template>
 
-  <NamedSlot>
-    <template #one>
-      <h1>one</h1>
-    </template>
-    <template #two>
-      <h1>two</h1>
-    </template>
-  </NamedSlot>
+  <SchoolComponent />
 
 </template>
