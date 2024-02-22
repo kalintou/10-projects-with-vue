@@ -1,8 +1,11 @@
 <script setup>
-import MyComponent from './components/MyComponent.vue';
+import MainComponent from './components/MainComponent.vue';
+
+
 </script>
 
 <template>
-  <MyComponent />
+
+  <MainComponent />
 
 </template>
