@@ -1,13 +1,15 @@
 <script setup>
-import ComponentEvent from './components/ComponentEvent.vue';
-import {ref} from 'vue'
+import FromComponent from './components/FromComponent.vue'
 
-let count = ref(0)
+const formHander = (username, email, password) => {
+  console.log('username', username)
+  console.log('email',email)
+  console.log('password', password)
+}
+
 </script>
 
 
 <template>
-  <!-- <h1>Count: {{ count }}</h1>
-  <ComponentEvent @incrementCounter="count++"/> -->
-
+  <FromComponent @userInfo="formHander"/>
 </template>
