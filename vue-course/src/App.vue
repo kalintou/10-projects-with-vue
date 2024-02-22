@@ -1,23 +1,19 @@
 <script setup>
 
-import SlotComponent from './components/SlotComponent.vue';
-import FallbackContent from './components/FallbackContent.vue'
+import NamedSlot from './components/NamedSlot.vue'
+
 </script>
 
 
 <template>
-  <SlotComponent>
-    <h1>Content 1</h1>
-    <h2>Content 2</h2>
-  </SlotComponent>
 
-  <hr>
+  <NamedSlot>
+    <template #one>
+      <h1>one</h1>
+    </template>
+    <template #two>
+      <h1>two</h1>
+    </template>
+  </NamedSlot>
 
-  <FallbackContent>
-
-  </FallbackContent>
-
-  <FallbackContent>
-    <p>Fallback will not work becuase ....</p>
-  </FallbackContent>
 </template>
