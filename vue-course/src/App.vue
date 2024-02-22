@@ -1,11 +1,11 @@
 <script setup>
-import MainComponent from './components/MainComponent.vue';
+import GettingDataWithFetch from './components/GettingDataWithFetch.vue';
 
 
 </script>
 
 <template>
 
-  <MainComponent />
+  <GettingDataWithFetch />
 
 </template>
