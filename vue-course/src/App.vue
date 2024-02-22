@@ -1,21 +1,49 @@
 <script setup>
+import {provide} from 'vue'
+import PracticeComponent from './components/PracticeComponent.vue';
 
-import SchoolComponent from './components/SchoolComponent.vue';
-import {provide} from 'vue';
+provide('friends', ['kan' ,'jordan','HuXn','Jogn'])
+provide('games', {
+  id: 1,
+  title: "Epic adad",
+  genre: ['Action','Adventrue', 'RPG'],
+  platform: ['Windows','Mac']
+})
 
-provide('studentName', 'Alex')
-provide('studentAge', 20)
-provide('studentLocation', ['China','Shanghai'])
-
-// const studentName = 'alex'
-// const studentAge = 20
-// const studentLocation = ['China', 'Shanghai']
+provide('moreGames', [
+{
+    title: 'Space 1',
+    genre: 'SF',
+    platform: 'PC',
+    releaseDate: '1999'
+  },
+  {
+    title: 'Space 2',
+    genre: 'SFF',
+    platform: 'PC',
+    releaseDate: '1999'
+  },
+  {
+    title: 'Space 3',
+    genre: 'SFFF',
+    platform: 'PC',
+    releaseDate: '1999'
+  },
+  {
+    title: 'Space 3',
+    genre: 'SFFF',
+    platform: 'PC',
+    releaseDate: '1999'
+  }
+])
 
 </script>
 
 
+
+
 <template>
 
-  <SchoolComponent />
+  <PracticeComponent />
 
 </template>
