@@ -3,15 +3,17 @@
 //import RandomQuoteGenerator from './2. Random Quote Generator/RandomQuoteGenerator.vue'
 //import AmazingCalculator from './3. Calculator/AmazingCalculator.vue';
 //import AccordionComponent from './4. Accordion/AccordionComponent.vue'
-import FormValidation from './5. FormValidation/FormValidation.vue'
-
+//import FormValidation from './5. FormValidation/FormValidation.vue'
+import PasswordGenerator from './6. PasswordGenerator/PasswordGenerator.vue'
 </script>
 
 <template>
-  <!-- <TodoList />
+  <!-- 
+  <TodoList />
   <RandomQuoteGenerator />
   <AmazingCalculator />
-  <AccordionComponent /> -->
+  <AccordionComponent /> 
   <FormValidation />
-
+  -->
+  <PasswordGenerator />
 </template>
