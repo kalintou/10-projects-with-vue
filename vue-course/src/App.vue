@@ -5,8 +5,8 @@
 //import AccordionComponent from './4. Accordion/AccordionComponent.vue'
 //import FormValidation from './5. FormValidation/FormValidation.vue'
 //import PasswordGenerator from './6. PasswordGenerator/PasswordGenerator.vue'
-import ProgressSteps from './7. Progress Steps/ProgressSteps.vue'
-
+//import ProgressSteps from './7. Progress Steps/ProgressSteps.vue'
+import DadJokes from './8. Dad Jokes/DadJokes.vue'
 
 </script>
 
@@ -18,8 +18,7 @@ import ProgressSteps from './7. Progress Steps/ProgressSteps.vue'
   <AccordionComponent /> 
   <FormValidation />
   <PasswordGenerator />
-  -->
-
   <ProgressSteps />
-
+  -->
+  <DadJokes />
 </template>
