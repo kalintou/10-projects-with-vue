@@ -1,11 +1,11 @@
 <script setup>
 //import GettingDataWithFetch from './components/GettingDataWithFetch.vue';
-import TodoList from './components/TodoList.vue';
+import RandomQuoteGenerator from './components/RandomQuoteGenerator.vue';
 
 </script>
 
 <template>
 
-  <TodoList />
+  <RandomQuoteGenerator />
 
 </template>
