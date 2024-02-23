@@ -1,12 +1,11 @@
 <script setup>
 //import GettingDataWithFetch from './components/GettingDataWithFetch.vue';
-import GettingDataWithAxios from './components/GettingDataWithAxios.vue';
+import TodoList from './components/TodoList.vue';
 
 </script>
 
 <template>
 
-  <!-- <GettingDataWithFetch /> -->
-  <GettingDataWithAxios />
+  <TodoList />
 
 </template>
