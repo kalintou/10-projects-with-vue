@@ -7,8 +7,8 @@
 //import PasswordGenerator from './6. PasswordGenerator/PasswordGenerator.vue'
 //import ProgressSteps from './7. Progress Steps/ProgressSteps.vue'
 //import DadJokes from './8. Dad Jokes/DadJokes.vue'
-import GithubUsersSearch from './9. Github Users Search/GithubUsersSearch.vue'
-
+//import GithubUsersSearch from './9. Github Users Search/GithubUsersSearch.vue'
+import WikiClone from './10. WikiClone/WikiClone.vue'
 
 
 </script>
@@ -23,6 +23,8 @@ import GithubUsersSearch from './9. Github Users Search/GithubUsersSearch.vue'
   <PasswordGenerator />
   <ProgressSteps />
   <DadJokes />
-  -->
   <GithubUsersSearch />
+  -->
+  <WikiClone />
+
 </template>
