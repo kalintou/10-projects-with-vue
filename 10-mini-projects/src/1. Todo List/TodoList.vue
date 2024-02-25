@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from "vue";
-
 const newTask = ref("");
 const tasks = ref([]);
 
