@@ -16,6 +16,7 @@ const removeTask = (index) => {
 </script>
 
 <template>
+  
   <div class="todo-app">
     <div class="task-input">
       <input
@@ -33,6 +34,7 @@ const removeTask = (index) => {
       </li>
     </ul>
   </div>
+
 </template>
 
 <style scoped>
