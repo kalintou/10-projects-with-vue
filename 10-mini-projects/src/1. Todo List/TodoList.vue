@@ -38,6 +38,7 @@ const removeTask = (index) => {
 </template>
 
 <style scoped>
+
 .todo-app {
   max-width: 400px;
   margin: 50px auto;
