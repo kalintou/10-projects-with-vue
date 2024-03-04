@@ -221,4 +221,5 @@ button[type='submit']:hover {
 .dark-theme .result-link:hover {
   color: #90caf9;
 }
+
 </style>
