@@ -9,9 +9,7 @@
       </router-link>
     </div>
   </div>
-  <pre>
-    {{ ingredients }}
-  </pre>
+  
 </template>
 
 <script setup>
